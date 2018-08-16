@@ -5,7 +5,6 @@ import { compose } from 'redux';
 //components
 import swal from 'sweetalert2';
 
-
 //material-ui
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';

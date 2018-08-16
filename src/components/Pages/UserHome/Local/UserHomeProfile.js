@@ -5,12 +5,8 @@ import { connect } from 'react-redux';
 import ProfileCard from './Card';
 import ArticleCard from './ArticleList';
 
-
 //stylesheets
 import './userHomeProfile.css';
-
-
-
 
 const mapStateToProps = state => ({
     adminReducer: state.adminReducer.newArticles

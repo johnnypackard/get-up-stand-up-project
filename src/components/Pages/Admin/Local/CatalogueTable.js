@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
-
 import { ADMIN_ACTIONS } from '../../../../redux/actions/adminActions';
 import ArticleModal from '../../../Global/Modals/ArticleModal';
 

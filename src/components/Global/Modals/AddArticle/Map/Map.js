@@ -117,13 +117,13 @@ export class Map extends Component {
       return (
           // div MUST have width and height defined here AND in map container
         <div>
-        <div style={style} ref="map">
-          Loading map...
-          {/* calling renderChildren here is what renders the children fed into the map in the Container
-          component on the map (i.e. the markers and the info window)
-           */}
-          {this.renderChildren()}
-        </div>
+          <div style={style} ref="map">
+            Loading map...
+            {/* calling renderChildren here is what renders the children fed into the map in the Container
+            component on the map (i.e. the markers and the info window)
+            */}
+            {this.renderChildren()}
+          </div>
         </div>
       );
     }

@@ -24,13 +24,6 @@ function* fetchUser() {
     });
   }
 }
-/*
-  Starts fetchUser on each dispatched `FETCH_USER` action.
-  Allows concurrent fetches of user.
-*/
-// function* userSaga() {
-//   yield takeEvery('FETCH_USER', fetchUser);
-// }
 
 /*
   Alternatively you may use takeLatest.

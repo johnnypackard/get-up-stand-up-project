@@ -32,9 +32,6 @@ import AddArticleModal from '../../Global/Modals/AddArticle/AddArticleModal';
 import ArticleModal from '../../Global/Modals/ArticleModal';
 import MapWrapper from './Local/Map/MapWrapper';
 
-// Stylesheet
-import './Landing.css';
-
 // Mapping the reducer states to the props of the app
 const mapStateToProps = state => ({
   user: state.user,

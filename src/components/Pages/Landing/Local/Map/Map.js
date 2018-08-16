@@ -74,7 +74,7 @@ export class Map extends Component {
     loadMap = () => {
       if (this.props && this.props.google){
 
-        // google is fed through proprs from the GoogleApiWrapper
+        // google is fed through props from the GoogleApiWrapper
         const {google} = this.props;
         const maps = google.maps;
   

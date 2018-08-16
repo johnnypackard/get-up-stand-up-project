@@ -10,12 +10,10 @@ import { USER_ACTIONS } from '../../../redux/actions/userActions';
 import './Header.css';
 
 // header App Bar
-import Grid from '@material-ui/core/Grid';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Button from '@material-ui/core/Button';
 import Icon from '@material-ui/core/Icon';
-import IconButton from '@material-ui/core/IconButton';
 import List from '@material-ui/core/List';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItem from '@material-ui/core/ListItem';
@@ -29,7 +27,6 @@ import LoginModal from '../Modals/LoginModal';
 import RegisterModal from '../Modals/RegisterModal';
 import Typography from '@material-ui/core/Typography';
 import Drawer from '@material-ui/core/Drawer';
-// import MenuList from '@material-ui/core/MenuList';
 import Divider from '@material-ui/core/Divider';
 
 const mapStateToProps = state => ({
@@ -94,7 +91,6 @@ class Header extends Component {
 
   componentDidUpdate() {
     if (!this.props.user.isLoading && this.props.user.user === null) {
-      // this.props.history.push('home');
     }
   }
 

@@ -1,26 +1,16 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import axios from 'axios';
 import './Resources.css'
-
-// import Nav from '../../Global/Nav/Nav';
 import {RESOURCE_ACTIONS} from '../../../redux/actions/resourceActions';
 import { USER_ACTIONS } from '../../../redux/actions/userActions';
 import { triggerLogout } from '../../../redux/actions/loginActions';
-
 import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import AddResourceModal from '../../Global/Modals/AddResourceModal';
 import EditResource from '../../Global/Modals/EditResourceModal'
-
-import Button from '@material-ui/core/Button';
-import Icon from '@material-ui/core/Icon';
-import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 import IconButton from '@material-ui/core/IconButton';
-
 
 const mapStateToProps = state => ({
   user: state.user,
@@ -42,13 +32,11 @@ class UserHome extends Component {
 
   componentDidUpdate() {
     if (!this.props.user.isLoading && this.props.user.user === null) {
-    //   this.props.history.push('home');
     }
   }
 
   logout = () => {
     this.props.dispatch(triggerLogout());
-    // this.props.history.push('home');
   }
 
   removeResource = (id) => {

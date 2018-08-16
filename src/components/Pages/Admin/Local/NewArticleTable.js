@@ -5,9 +5,7 @@ import {compose} from 'redux';
 //Article Modal
 import ArticleModal from '../../../Global/Modals/ArticleModal';
 import CommentsModal from '../../../Global/Modals/CommentsModal';
-
 import { ADMIN_ACTIONS } from '../../../../redux/actions/adminActions';
-
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import DeleteIcon from '@material-ui/icons/Delete';

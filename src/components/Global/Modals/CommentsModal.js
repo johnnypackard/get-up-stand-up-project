@@ -16,8 +16,6 @@ import Tooltip from '@material-ui/core/Tooltip';
 import IconButton from '@material-ui/core/IconButton';
 import swal from 'sweetalert2';
 
-
-
 const mapStateToProps = state => ({
   adminReducer :state.adminReducer.newArticles,
 })

@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import ReactDOMServer from 'react-dom/server';
 
 
-class InfoWindow extends React.Component {
+class InfoWindow extends Component {
     
     componentDidUpdate(prevProps){
         if (this.props.map !== prevProps.map){

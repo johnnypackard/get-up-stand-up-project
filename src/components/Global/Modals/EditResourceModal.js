@@ -4,16 +4,11 @@ import TextField from '@material-ui/core/TextField';
 import Dialog from '@material-ui/core/Dialog';
 import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import {RESOURCE_ACTIONS} from '../../../redux/actions/resourceActions';
 import { connect } from 'react-redux';
 import Icon from '@material-ui/core/Icon';
 import IconButton from '@material-ui/core/IconButton';
-import { renderComponent } from 'recompose';
-
-
-// import DeleteSnackbar from '../Snackbars/DeleteSnackbar';
 
 const mapStateToProps = state => ({
     user: state.user,
@@ -29,9 +24,6 @@ class EditResource extends React.Component {
             }
         }
     }
-
-
-
 
 handleClickOpen = () => {
     this.setState({ 
