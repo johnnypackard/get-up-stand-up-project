@@ -33,7 +33,7 @@ A step by step series of examples that tell you how to get a development environ
 4. Create a local directory or navigate to the local directory into which you wish to clone the project.
 5. Open your Terminal, in the terminal navigate to the directory in which you created or an already existing directory from step 4.
 6. In the terminal, type `git clone`, then paste the URL you'd copied in Step 2.
-⋅⋅* `$ git clone https://github.com/srz1992/get-up-stand-up-project`
+  * `$ git clone https://github.com/srz1992/get-up-stand-up-project`
 7. Press **Enter**. Your local clone will be created in the directory from step 4.
 8. In the Terminal, type 'npm install' and press **Enter**
 9. Open the project in your IDE.
