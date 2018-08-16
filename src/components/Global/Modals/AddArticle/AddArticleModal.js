@@ -347,7 +347,7 @@ class AddArticleModal extends React.Component {
             name="related_articles"
             autoFocus
             margin="dense"
-            label="Related Articles"
+            label="Article Url"
             fullWidth
             multiline
             />
