@@ -531,9 +531,7 @@ class AddArticleModal extends React.Component {
                 <Button variant="contained" color="primary" onClick={this.handleNext}>
                   {activeStep === steps.length - 1 ? 'Finish' : 'Next'}
                 </Button>
-                {this.state.activeStep === 0 && <Button onClick={this.fillForm}>
-                  
-                </Button>}
+              
       
               </div>
             </div>
