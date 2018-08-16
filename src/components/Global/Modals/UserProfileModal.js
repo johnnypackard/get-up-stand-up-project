@@ -5,7 +5,6 @@ import { connect } from 'react-redux';
 import {ADMIN_ACTIONS} from '../../../redux/actions/adminActions';
 import {USER_ACTIONS} from '../../../redux/actions/userActions';
 
-
 // material ui
 import { withStyles } from '@material-ui/core/styles';
 import Select from '@material-ui/core/Select';
@@ -15,14 +14,11 @@ import FormHelperText from '@material-ui/core/FormHelperText';
 //components
 import swal from 'sweetalert2'
 
-
-
 //ReduxStore
 const mapStateToProps = state => ({
     user: state.user.user.id,
     allUsers: state.adminReducer.allUser,
 })
-
 
 function rand() {
   return Math.round(Math.random() * 20) - 10;
@@ -75,7 +71,6 @@ class EditUserModal extends React.Component {
           type: event.target.value
         })
         this.props.dispatch({type: ADMIN_ACTIONS.SET_USER_TYPE, payload: this.state.type, userId })
-        // this.props.dispatch({type: ADMIN_ACTIONS.FETCH_ALL_USER})
         swal(
           `Success`,
           'User Type Has been Modified',

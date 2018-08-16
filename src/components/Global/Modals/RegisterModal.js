@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
@@ -8,13 +7,10 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import axios from 'axios';
-import { LOGIN_ACTIONS } from '../../../redux/actions/loginActions';
-import { triggerLogin, formError, clearError, formError2 } from '../../../redux/actions/loginActions';
 import Icon from '@material-ui/core/Icon';
 import { compose } from 'recompose';
 import { withStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
-// import Input from '@material-ui/core/Input';
 
 const mapStateToProps = state => ({
     user: state.user,
@@ -36,7 +32,7 @@ const styles = theme => ({
     },
     });
 
-class RegisterModal extends React.Component {
+class RegisterModal extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -70,7 +66,6 @@ class RegisterModal extends React.Component {
         axios.post('/api/users/register/', body)
         .then((response) => {
             if (response.status === 201) {
-            // this.props.history.push('/home');
             this.handleClose();
             } else {
             this.setState({

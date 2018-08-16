@@ -1,10 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { compose } from 'redux';
-
 import { ADMIN_ACTIONS } from '../../../../redux/actions/adminActions';
-import CommentsModal from '../../../Global/Modals/CommentsModal';
-
 import PropTypes from 'prop-types';
 import { withStyles} from '@material-ui/core/styles';
 
@@ -24,9 +21,6 @@ import KeyboardArrowRight from '@material-ui/icons/KeyboardArrowRight';
 import LastPageIcon from '@material-ui/icons/LastPage';
 import { Typography } from '../../../../../node_modules/@material-ui/core';
 import Tooltip from '@material-ui/core/Tooltip';
-//components
-import swal from 'sweetalert2';
-
 
 const mapStateToProps = state => ({
     adminReducer :state.adminReducer.modifiedArticles,

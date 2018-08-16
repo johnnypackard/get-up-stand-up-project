@@ -47,7 +47,6 @@ class AddResourceModal extends React.Component {
     }
     addResource = (event) => {
         event.preventDefault();
-        // if (this.state.user.user.type === 'admin') {
             const body = {
             name: this.state.name,
             url: this.state.url,

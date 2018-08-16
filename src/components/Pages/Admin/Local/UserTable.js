@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { compose } from 'redux';
 
 //material-ui
 import { withStyles } from '@material-ui/core/styles';
@@ -20,7 +19,6 @@ import LastPageIcon from '@material-ui/icons/LastPage';
 import TableHead from '@material-ui/core/TableHead';
 import DeleteIcon from '@material-ui/icons/Delete';
 import Tooltip from '@material-ui/core/Tooltip';
-import EditIcon from '@material-ui/icons/Edit';
 
 //components
 import EditUserModal from '../../../Global/Modals/UserProfileModal';
@@ -30,7 +28,6 @@ import swal from 'sweetalert2';
 //Actions
 import { ADMIN_ACTIONS } from '../../../../redux/actions/adminActions';
 import {USER_ACTIONS} from '../../../../redux/actions/userActions';
-
 
 
 const mapStateToProps = state => ({

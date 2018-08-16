@@ -1,17 +1,10 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-//materiaul-ui
-import AddCircle from '@material-ui/icons/Add';
-import IconButton from '@material-ui/core/IconButton';
-import Button from '@material-ui/core/Button';
-
 import './adminHomeProfile.css';
 
 //Components
 import ProfileCard from '../../UserHome/Local/Card';
-import { Typography } from '@material-ui/core';
-
 import AdminNav from '../Local/AdminNav';
 
 const mapStateToProps = state => ({

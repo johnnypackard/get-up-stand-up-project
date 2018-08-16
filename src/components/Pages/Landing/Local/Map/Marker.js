@@ -6,7 +6,6 @@ const evtNames = [
   'click'
 ]
 
-
 export class MyMarker extends Component {
     
     componentDidMount(){

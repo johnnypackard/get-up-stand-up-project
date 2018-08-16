@@ -212,7 +212,7 @@ class AddArticleModal extends React.Component {
               }} 
             >
             <MenuItem>
-            <em>None</em>
+              <em>None</em>
             </MenuItem>
             {this.props.research_type.map((research_type, i) => {
                 return (

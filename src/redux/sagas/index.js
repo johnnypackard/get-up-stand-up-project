@@ -14,6 +14,5 @@ export default function* rootSaga() {
     articleSaga(),
     adminSaga(),
     mapSaga(),
-    // watchIncrementAsync()
   ]);
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import axios from 'axios';
 import { withStyles } from '@material-ui/core/styles';
 import { connect } from 'react-redux';
@@ -10,8 +9,6 @@ import Grid from '@material-ui/core/Grid';
 import SearchIcon from '@material-ui/icons/Search';
 import Button from '@material-ui/core/Button';
 import FormControl from '@material-ui/core/FormControl';
-import '../Landing.css';
-import { MAP_ACTIONS } from '../../../../redux/actions/mapActions';
 import Autocomplete from 'react-google-autocomplete';
 import {KEYS} from '../../../../Key';
 
@@ -91,8 +88,6 @@ class SearchBar extends React.Component{
         const latLng = {...response.data.results[0].geometry.location}
         console.log('latLng:', latLng);
         this.props.setCurrentLocation(latLng)
-        // this.props.dispatch({type: MAP_ACTIONS.SET_ADDRESS, payload: latLng})
-        // this.props.dispatch({type: MAP_ACTIONS.RECENTER})
     })
          .catch(err => {
            console.log('in googleApicall',err);                     //Axios entire error message
@@ -131,7 +126,6 @@ class SearchBar extends React.Component{
                           fontSize:'18px',
                           disableUnderline:'true',
                           margin: 'none',
-                          // backgroundColor: '#7589b7',
                         }}
                         onPlaceSelected={(place) => {
                           console.log(place);

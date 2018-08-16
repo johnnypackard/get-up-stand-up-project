@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import { USER_ACTIONS } from '../../../redux/actions/userActions';
 import { triggerLogout } from '../../../redux/actions/loginActions';
 // Components
-import ArticleCard from './Local/ArticleList';
 import UserHomeProfile from './Local/UserHomeProfile';
 
 const mapStateToProps = state => ({

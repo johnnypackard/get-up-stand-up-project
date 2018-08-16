@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { actionChannel } from 'redux-saga/effects';
 
 export function getAllUsers() {
     return axios.get('/api/admin')
