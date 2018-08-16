@@ -8,17 +8,16 @@ These instructions will get you a copy of the project up and running on your loc
 
 ## Prerequisites
 
-What things you need to install the software and how to install them
+Software or Technology to install/obtain 
+ - Postico (used to manage the databases)
+ - An IDE code viewer such as Visual Studio Code, Atom, Sublime, etc...
+ - Obtain an Google Maps API key. Can be obtained by creating a Google Maps Platform account at the following link:
+
+ https://cloud.google.com/maps-platform/?_ga=2.155566267.140811539.1534436762-799229381.1534436762#get-started
+
 
 ```
-HTML, CSS, JavaScript
-Basic understanding Webpack, Gulp, or Grunt
-Intro to JSX
-Installation of React
-React-Redux
-PostreSQL and/or Postico for Database usage
 
-```
 ### Lay of the Land
 
 * `src/` contains React Components.
@@ -30,36 +29,46 @@ PostreSQL and/or Postico for Database usage
 
 A step by step series of examples that tell you how to get a development environment running.
 
-1. From GitHub, navigate to the main page of the repository.
+1. From GitHub, navigate to the main page of the repository.                https://github.com/srz1992/get-up-stand-up-project
 2. Under the repository name, click **Clone or download**.
 3. In the Clone with HTTPs section, click the copy button to copy the clone URL for the repository.
-4. Open Terminal.
-5. Change the current working directory to the location where you want the cloned directory to be made.
-6. Type `git clone`, then paste the URL you'd copied in Step 2.
+4. Create a local directory or navigate to the local directory into which you wish to clone the project.
+5. Open your Terminal, in the terminal navigate to the directory in which you created or an already existing directory from step 4.
+6. In the terminal, type `git clone`, then paste the URL you'd copied in Step 2.
 ⋅⋅* `$ git clone https://github.com/srz1992/get-up-stand-up-project`
-7. Press **Enter**. Your local clone will be created.
+7. Press **Enter**. Your local clone will be created in the directory from step 4.
+8. In the Terminal, type 'npm install' and press **Enter**
+9. Open the project in your IDE.
+10. Locate the 'src' folder
+11. **You will need your Google Maps API key for this step** 
+In the 'src' folder create a new file called Key.js and copy and paste the following into the new Key.js file you just created:
 
+  export const KEYS = {
+    GOOGLE_API_KEY: 'put your Google Maps API key here'
+  }
 
-Following those initial steps, run the following sequences in order:
+12. In your IDE, navigate to the '.gitignore' file and perform the following steps:
+  a. on line 37, enter a "#" in front of "build/"
+    ex: #build/
+  b. on line 68, enter a "#" in front of "Key.js"
+    ex: #Key.js
 
-```
-in Terminal, 
-```
-
-```
-npm install
 ```
 
 ```
 Download and Install [Postico](https://eggerapps.at/postico/)
 
-Using Postico, create a new database named "gusu_project"
+In your termial, type 'brew services start postgresql' and press **Enter**
 
-Reference and execute the queries provided in `database.sql`
+Open Postico and create a new database named "gusu_project"
+
+Reference and execute the queries provided in the `database.sql` file.
+
+This will create the database tables required.
 ```
 
 ###IMPORTANT###
-Using Postico, CREATE THE FOLLOWING TABLES IN ORDER: 
+Using Postico, CREATE THE FOLLOWING TABLES IN THE 'SQL Query' FILE IN THE FOLLOWING ORDER: 
 
 1. users 
 2. profile
