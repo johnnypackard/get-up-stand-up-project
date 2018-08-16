@@ -9,14 +9,12 @@ These instructions will get you a copy of the project up and running on your loc
 ## Prerequisites
 
 Software or Technology to install/obtain 
- - Postico (used to manage the databases)
+ - Postgres & Postico (used to manage the databases)
  - An IDE code viewer such as Visual Studio Code, Atom, Sublime, etc...
  - Obtain an Google Maps API key. Can be obtained by creating a Google Maps Platform account at the following link:
 
  https://cloud.google.com/maps-platform/?_ga=2.155566267.140811539.1534436762-799229381.1534436762#get-started
 
-
-```
 
 ### Lay of the Land
 
@@ -29,7 +27,7 @@ Software or Technology to install/obtain
 
 A step by step series of examples that tell you how to get a development environment running.
 
-1. From GitHub, navigate to the main page of the repository.                https://github.com/srz1992/get-up-stand-up-project
+1. From GitHub, navigate to the main page of the repository. [Find Repository Here](https://github.com/srz1992/get-up-stand-up-project)
 2. Under the repository name, click **Clone or download**.
 3. In the Clone with HTTPs section, click the copy button to copy the clone URL for the repository.
 4. Create a local directory or navigate to the local directory into which you wish to clone the project.
@@ -40,7 +38,7 @@ A step by step series of examples that tell you how to get a development environ
 8. In the Terminal, type 'npm install' and press **Enter**
 9. Open the project in your IDE.
 10. Locate the 'src' folder
-11. **You will need your Google Maps API key for this step** 
+11. **You will need your Google Maps API key for this step** :
 In the 'src' folder create a new file called Key.js and copy and paste the following into the new Key.js file you just created:
 
   export const KEYS = {
@@ -53,19 +51,16 @@ In the 'src' folder create a new file called Key.js and copy and paste the follo
   b. on line 68, enter a "#" in front of "Key.js"
     ex: #Key.js
 
-```
 
-```
-Download and Install [Postico](https://eggerapps.at/postico/)
 
-In your termial, type 'brew services start postgresql' and press **Enter**
+13. Download and Install [Postico](https://eggerapps.at/postico/)
 
-Open Postico and create a new database named "gusu_project"
+14. In your terminal, type 'brew services start postgresql' and press **Enter**
 
-Reference and execute the queries provided in the `database.sql` file.
+15. Open Postico and create a new database named "gusu_project"
 
-This will create the database tables required.
-```
+16. Reference and execute the queries provided in the `database.sql` file. This will create the database tables required.
+
 
 ###IMPORTANT###
 Using Postico, CREATE THE FOLLOWING TABLES IN THE 'SQL Query' FILE IN THE FOLLOWING ORDER: 
@@ -130,7 +125,8 @@ Run the following commands from within your project folder.
 
 Make sure your PORT is configured correctly as:
 
-```JavaScript
+```
+JavaScript
 var port = process.env.PORT || 5000;
 ```
 
